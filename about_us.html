@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySense - Fermi Desio</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .meta, .tre{
+            font-size: x-large;
+            line-height: 0.3;
+        }
+        .tre > div > p {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="no-underline">
+            <img src="SkySense.png" height="75">
+        </a>
+    </header>
+
+    <script src="menu.js"></script>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Hamburger -->
+    <nav id="sideMenu">
+        <center><img src="IMG/logo.png"></center>
+        <a href="index.html" onclick="closeMenu()">&#127968; Home</a>
+        <a href="about_us.html" onclick="closeMenu()">&#128101; About Us</a>
+
+        <a href="missions.html" onclick="closeMenu()">&#127919; Missions</a>
+        <!--<div class="submenu">
+            <a href="missions.html" onclick="closeMenu()">Primary Mission</a>
+            <a href="missions.html" onclick="closeMenu()">Secondary Mission</a>
+        </div>-->
+
+        <a href="structure.html" onclick="closeMenu()">&#128640; Structure</a>
+
+        <a href="hardware.html" onclick="closeMenu()">&#x1F6E0; Hardware</a>
+
+        <a href="software.html" onclick="closeMenu()">&#128187; Software</a>
+    </nav>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+<!-- Fine hamburger -->
+
+<div id="contenuto_sito">
+
+    <div class="meta" style="padding-left: 13%; padding-right: 13%;">
+        <div>
+            <img src="IMG/Persone/prova.png">
+            <h2>Prof. Galliani</h2> <br>
+            <p>professore</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png">
+            <h2>Prof.ssa Esposito</h2> <br>
+            <p>professoressa</p>
+        </div>
+    </div>
+    
+    <div class="tre">
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Mattia Checchetto</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Leonardo Mandelli</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Jacopo Giussani</h2>
+            <p>studente</p>
+        </div>
+    </div>
+
+    <div class="tre">
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Paolo Mirabile</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Roberto Brenna</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Sofia Li</h2>
+            <p>studente</p>
+        </div>
+    </div>
+
+    <div class="tre">
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Stefano Marcati</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Mattia Nicoletti</h2>
+            <p>studente</p>
+        </div>
+        <div>
+            <img src="IMG/Persone/prova.png" style="width: 150px;">
+            <h2>Byron Zambonini</h2>
+            <p>studente</p>
+        </div>
+    </div>
+    <br><br>
+    
+    <div class="metaaa">
+        <div style="text-align: left;">
+            <a href="index.html" onclick="closeMenu()"><- Home</a>
+        </div>
+        <div style="text-align: right;">
+            <a href="missions.html" onclick="closeMenu()">Missions -></a>
+        </div>
+    </div>
+</div><!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
+
+<footer>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <p>SkySense © 2026&nbsp;</p>
+        </div>
+        <div style="text-align: left;">
+            <p>|&nbsp;ITI E.Fermi Desio</p>
+        </div>
+    </div>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <a href="https://www.instagram.com/skysense_26/" target="_blank">&#128242;&nbsp;Instagram</a>
+            <span>&nbsp;</span>
+        </div>
+        <div style="text-align: left; color: white;">
+            <span>|&nbsp;</span>
+            <a href="mailto:fermi.skysense@gmail.com" target="_blank">&#128231;&nbsp;Email</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

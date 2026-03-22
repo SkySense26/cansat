@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySense - Fermi Desio</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .slideshow-container > div > img{
+            width:auto;
+            max-width: 90%;
+            border-radius: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="no-underline">
+            <img src="SkySense.png" height="75">
+        </a>
+    </header>
+
+    <script src="menu.js"></script>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Hamburger -->
+    <nav id="sideMenu">
+        <center><img src="IMG/logo.png"></center>
+        <a href="index.html" onclick="closeMenu()">&#127968; Home</a>
+        <a href="about_us.html" onclick="closeMenu()">&#128101; About Us</a>
+
+        <a href="missions.html" onclick="closeMenu()">&#127919; Missions</a>
+        <!--<div class="submenu">
+            <a href="missions.html" onclick="closeMenu()">Primary Mission</a>
+            <a href="missions.html" onclick="closeMenu()">Secondary Mission</a>
+        </div>-->
+
+        <a href="structure.html" onclick="closeMenu()">&#128640; Structure</a>
+
+        <a href="hardware.html" onclick="closeMenu()">&#x1F6E0; Hardware</a>
+
+        <a href="software.html" onclick="closeMenu()">&#128187; Software</a>
+    </nav>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+<!-- Fine hamburger -->
+
+
+<div id="contenuto_sito">
+    <div class="meta">
+        <div>
+            <h2>Software</h2>
+            <p>The SkySense software is responsible for managing sensor data acquisition, communication with the 
+                ground station and data processing.<br>
+                The system is programmed in Python and runs on a Raspberry Pi Pico, which collects environmental 
+                data such as altitude, pressure, temperature, acceleration and air quality. Data packets are transmitted 
+                to the ground station at a frequency of at least 1 Hz, while also being stored locally on an SD card to 
+                prevent data loss in case of transmission issues.<br>
+                A key innovative feature of our software is the data-to-music conversion system, which transforms scientific 
+                measurements into musical parameters such as pitch, rhythm and tempo. The generated sound is further refined 
+                using AI-based music generation tools, creating a unique combination of scientific data and artistic expression.
+            </p>
+            <div class="tre">
+                <div class="logo">
+                    <img src="IMG/python.svg.png" alt="Python" style="height: 75px;">
+                </div>
+                <div class="logo">
+                    <img src="IMG/lora.png" alt="LoRa" style="height: 75px;">
+                </div>
+                <div class="logo">
+                    <img src="IMG/raspberry.png" alt="Raspberry" style="height: 75px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <br>
+            <script src="slideshow_2.js"></script>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="IMG/software.png">
+                </div>
+            </div>
+                <script> showSlides(); </script>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="metaaa">
+        <div style="text-align: left;">
+            <a href="hardware.html" onclick="closeMenu()"><- Hardware</a>
+        </div>
+        <div style="text-align: right;">
+            <a href="index.html" onclick="closeMenu()">Home -></a>
+        </div>
+    </div>
+</div><!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
+
+<footer>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <p>SkySense © 2026&nbsp;</p>
+        </div>
+        <div style="text-align: left;">
+            <p>|&nbsp;ITI E.Fermi Desio</p>
+        </div>
+    </div>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <a href="https://www.instagram.com/skysense_26/" target="_blank">&#128242;&nbsp;Instagram</a>
+            <span>&nbsp;</span>
+        </div>
+        <div style="text-align: left; color: white;">
+            <span>|&nbsp;</span>
+            <a href="mailto:fermi.skysense@gmail.com" target="_blank">&#128231;&nbsp;Email</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

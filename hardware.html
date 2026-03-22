@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySense - Fermi Desio</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        .tre{
+            font-size: x-large;
+        }
+        .tre > div > p {
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="no-underline">
+            <img src="SkySense.png" height="75">
+        </a>
+    </header>
+
+    <script src="menu.js"></script>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Hamburger -->
+    <nav id="sideMenu">
+        <center><img src="IMG/logo.png"></center>
+        <a href="index.html" onclick="closeMenu()">&#127968; Home</a>
+        <a href="about_us.html" onclick="closeMenu()">&#128101; About Us</a>
+
+        <a href="missions.html" onclick="closeMenu()">&#127919; Missions</a>
+        <!--<div class="submenu">
+            <a href="missions.html" onclick="closeMenu()">Primary Mission</a>
+            <a href="missions.html" onclick="closeMenu()">Secondary Mission</a>
+        </div>-->
+
+        <a href="structure.html" onclick="closeMenu()">&#128640; Structure</a>
+
+        <a href="hardware.html" onclick="closeMenu()">&#x1F6E0; Hardware</a>
+
+        <a href="software.html" onclick="closeMenu()">&#128187; Software</a>
+    </nav>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+<!-- Fine hamburger -->
+
+
+<div id="contenuto_sito">
+    <div class="meta">
+        <div>
+            <h2>Hardware</h2>
+            <p>The hardware architecture of SkySense is built around reliable and energy-efficient components 
+                capable of collecting and transmitting environmental data during the mission.<br>
+                The core of the system is a Raspberry Pi Pico 2, connected to multiple sensors and communication 
+                modules. These include a BMP280 sensor for pressure, temperature and altitude measurements, and an air 
+                quality sensor for detecting harmful gases and particulate matter.<br>
+                For communication with the ground station, the CanSat uses a LoRa SX1276 868 MHz module with antenna, 
+                enabling long-range and low-power data transmission. Data is also stored locally using an SD card module 
+                to ensure redundancy and reliability.<br>
+                The system is powered by a compact battery module designed to provide stable energy throughout the 
+                mission while maintaining low weight and power consumption.
+            </p>
+        </div>
+        <div>
+            <img src="IMG/1.jpeg">
+        </div>
+    </div>
+    <br>
+    <div class="tre">
+        <div>
+            <img src="IMG/hardware/pico.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>Raspberry Pi Pico</h2>
+            <p>The main controller of the system, responsible for reading sensor data and managing all operations.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/sd.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>SD Card Module</h2>
+            <p>Used to store data locally during the mission, ensuring no data is lost in case of transmission issues.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/bmp.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>BMP280 Sensor</h2>
+            <p>Measures atmospheric pressure and temperature, essential for the primary mission.</p>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="tre">
+        <div>
+            <img src="IMG/hardware/gps.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>GPS Module</h2>
+            <p>Provides real-time position data, allowing tracking of the CanSat during descent.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/converter.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>Step-UP converter</h2>
+            <p>Regulates and increases voltage to supply the components with the required power.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/lora.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>LoRa Module</h2>
+            <p>Enables long-range communication with the ground station, transmitting data in real time.</p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="metaaa">
+        <div style="text-align: left;">
+            <a href="structure.html" onclick="closeMenu()"><- Structure</a>
+        </div>
+        <div style="text-align: right;">
+            <a href="software.html" onclick="closeMenu()">Software -></a>
+        </div>
+    </div>
+</div><!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
+
+
+<footer>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <p>SkySense © 2026&nbsp;</p>
+        </div>
+        <div style="text-align: left;">
+            <p>|&nbsp;ITI E.Fermi Desio</p>
+        </div>
+    </div>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <a href="https://www.instagram.com/skysense_26/" target="_blank">&#128242;&nbsp;Instagram</a>
+            <span>&nbsp;</span>
+        </div>
+        <div style="text-align: left; color: white;">
+            <span>|&nbsp;</span>
+            <a href="mailto:fermi.skysense@gmail.com" target="_blank">&#128231;&nbsp;Email</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkySense - Fermi Desio</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="no-underline">
+            <img src="SkySense.png" height="75">
+        </a>
+    </header>
+
+    <script src="menu.js"></script>
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+<!-- Hamburger -->
+    <nav id="sideMenu">
+        <center><img src="IMG/logo.png"></center>
+        <a href="index.html" onclick="closeMenu()">&#127968; Home</a>
+        <a href="about_us.html" onclick="closeMenu()">&#128101; About Us</a>
+
+        <a href="missions.html" onclick="closeMenu()">&#127919; Missions</a>
+        <!--<div class="submenu">
+            <a href="missions.html" onclick="closeMenu()">Primary Mission</a>
+            <a href="missions.html" onclick="closeMenu()">Secondary Mission</a>
+        </div>-->
+
+        <a href="structure.html" onclick="closeMenu()">&#128640; Structure</a>
+
+        <a href="hardware.html" onclick="closeMenu()">&#x1F6E0; Hardware</a>
+
+        <a href="software.html" onclick="closeMenu()">&#128187; Software</a>
+    </nav>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+<!-- Fine hamburger -->
+
+<!-- Libreria Three.js -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+
+<!-- Script del modello -->
+<script type="module" src="struttura.js"></script>
+
+<!-- FINE SEZIONE MODELLO 3D -->
+
+<div id="contenuto_sito">
+    <div class="meta">
+        <div>
+            <br><br>
+            <!-- SEZIONE MODELLO 3D -->
+            <section>
+                <div id="viewer3d"></div>
+            </section>
+        </div>
+        <div style="text-align: justify; padding: 25px;">
+            <h2>Structure</h2>
+            <p>The structure of SkySense is designed to be compact, lightweight and robust, 
+                ensuring both mechanical resistance and efficient use of internal space.
+                The shell is produced with PLA, a lightweight 
+                and environmentally friendly material derived from renewable sources. The internal 
+                layout is carefully designed to organize electronic components efficiently while allowing 
+                quick access for maintenance and testing.
+                Openings in the outer structure allow the internal environment of the 
+                CanSat to balance with the surrounding atmosphere, ensuring accurate measurements 
+                of pressure and temperature. The structure also guarantees proper exposure of the air quality 
+                sensors to the external environment.
+            </p>
+        </div>
+    </div>
+    <br><br>
+
+    <div class="metaaa">
+        <div style="text-align: left;">
+            <a href="missions.html" onclick="closeMenu()"><- Missions</a>
+        </div>
+        <div style="text-align: right;">
+            <a href="hardware.html" onclick="closeMenu()">Hardware -></a>
+        </div>
+    </div>
+</div><!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
+
+<footer>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <p>SkySense © 2026&nbsp;</p>
+        </div>
+        <div style="text-align: left;">
+            <p>|&nbsp;ITI E.Fermi Desio</p>
+        </div>
+    </div>
+    <div class="metaaa">
+        <div style="text-align: right;">
+            <a href="https://www.instagram.com/skysense_26/" target="_blank">&#128242;&nbsp;Instagram</a>
+            <span>&nbsp;</span>
+        </div>
+        <div style="text-align: left; color: white;">
+            <span>|&nbsp;</span>
+            <a href="mailto:fermi.skysense@gmail.com" target="_blank">&#128231;&nbsp;Email</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
