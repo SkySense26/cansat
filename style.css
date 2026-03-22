@@ -79,6 +79,18 @@ header p {
     border-radius: 2px;
     box-shadow: 0 0 8px rgba(125, 211, 252, 0.6);
 }
+@media (max-width: 600px) {
+    .hamburger {
+        width: 22px;
+        height: 16px;
+        top: 20px;
+        left: 15px;
+    }
+
+    .hamburger span {
+        height: 2px;
+    }
+}
 
 /* Menu laterale */
 #sideMenu {
