@@ -211,7 +211,7 @@ blockquote{
 
 .meta{
     display:flex;
-    text-align: justify;
+    text-align: center;
     overflow: hidden;
     align-items: center;
     flex-wrap: wrap;
@@ -236,7 +236,7 @@ blockquote{
 
 .metaaa{
     display:flex;
-    text-align: justify;
+    text-align: center;
     overflow: hidden;
     align-items: center;
     flex-wrap: wrap;
@@ -247,7 +247,7 @@ blockquote{
 
 .tre {
     display: flex;
-    text-align: justify;
+    text-align: center;
     font-size: x-large;
     overflow: hidden;
 }
@@ -286,7 +286,7 @@ table{
 }
 td, th {
     border: 1px solid black;
-    text-align: justify;
+    text-align: center;
     padding: 8px;
     color: #ffffff;;
 }
