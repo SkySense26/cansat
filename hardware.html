@@ -12,8 +12,16 @@
         .tre{
             font-size: x-large;
         }
+        .tre > div{
+            padding: 20px;
+        }
         .tre > div > p {
             font-size: large;
+        }
+        .slideshow-container > div > img{
+            width:auto;
+            max-width: 90%;
+            border-radius: 5%;
         }
     </style>
 </head>
@@ -58,8 +66,8 @@
 
 
 <div id="contenuto_sito">
-    <div class="meta">
-        <div>
+    <div class="meta" style="text-align: justify;">
+        <div style="padding: 15px;">
             <h2>Hardware</h2>
             <p>The hardware architecture of SkySense is built around reliable and energy-efficient components 
                 capable of collecting and transmitting environmental data during the mission.<br>
@@ -74,7 +82,15 @@
             </p>
         </div>
         <div>
-            <img src="IMG/1.jpeg">
+            <br>
+            <script src="slideshow_2.js"></script>
+
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="IMG/hardware.png" style="max-height: 500px;">
+                </div>
+            </div>
+                <script> showSlides(); </script>
         </div>
     </div>
     <br>
@@ -95,7 +111,25 @@
             <p>Measures atmospheric pressure and temperature, essential for the primary mission.</p>
         </div>
     </div>
-    <br><br><br>
+    <br>
+    <div class="tre">
+        <div>
+            <img src="IMG/hardware/modulo.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>Battery Shield</h2>
+            <p>Manages battery charging and power distribution, ensuring a stable energy supply for the micro-controller.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/batteria.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>Li-ion Battery</h2>
+            <p>The main power source of the system, providing high-capacity energy for long-duration missions.</p>
+        </div>
+        <div>
+            <img src="IMG/hardware/gas.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
+            <h2>Gas Sensor</h2>
+            <p>Monitors air quality by detecting carbon monoxide, nitrogen dioxide, and ammonia levels in the atmosphere.</p>
+        </div>
+    </div>
+    <br>
     <div class="tre">
         <div>
             <img src="IMG/hardware/gps.jpg" style="width: 150px; border-radius: 50%; object-fit: cover;">
