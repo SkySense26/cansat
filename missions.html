@@ -135,6 +135,25 @@
     </div>
 </div> <!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
 
+<div id="scrollMsg" style="padding-right: 35px;">Scroll to see more ↓</div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        const msg = document.getElementById('scrollMsg');
+        msg.style.display = 'none'; // scompare al primo scroll
+    });
+    </script>
+
+    <style>
+        #scrollMsg {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: right;
+        font-size: 16px;
+        color: #7dd3fc;;
+    }
+</style>
 
 <footer>
     <div class="metaaa">
