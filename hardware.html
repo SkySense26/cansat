@@ -23,6 +23,20 @@
             max-width: 90%;
             border-radius: 5%;
         }
+        #scroll-indicator {
+position: fixed;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+font-family: Arial, sans-serif;
+font-size: 14px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #ffffff;
+opacity: 1;
+transition: opacity 0.3s ease;
+pointer-events: none; /* evita
+interferenze con il mouse */}
     </style>
 </head>
 
@@ -64,6 +78,19 @@
 <div id="overlay" onclick="toggleMenu()"></div>
 <!-- Fine hamburger -->
 
+<div id="scroll-indicator">
+Scroll to see more 
+</div>
+<script>
+const indicator = document.getElementById('scroll-indicator');
+
+window.addEventListener('scroll', () => {
+    const fadeEnd = 200;
+    let opacity = 1 - (window.scrollY / fadeEnd);
+    opacity = Math.max(0, Math.min(1, opacity));
+    indicator.style.opacity = opacity;
+});
+</script>
 
 <div id="contenuto_sito">
     <div class="meta" style="text-align: justify;">
@@ -159,25 +186,6 @@
     </div>
 </div><!--E' il div iniziale che si chiude per ridimensionare i bordi solo da pc-->
 
-<div id="scrollMsg" style="padding-right: 35px;">Scroll to see more ↓</div>
-
-    <script>
-        window.addEventListener('scroll', function() {
-        const msg = document.getElementById('scrollMsg');
-        msg.style.display = 'none'; // scompare al primo scroll
-    });
-    </script>
-
-    <style>
-        #scrollMsg {
-        position: fixed;
-        bottom: 20px;
-        width: 100%;
-        text-align: right;
-        font-size: 16px;
-        color: #7dd3fc;;
-    }
-</style>
 
 <footer>
     <div class="metaaa">
