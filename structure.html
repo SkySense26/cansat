@@ -15,6 +15,16 @@
             border-radius: 3%;   
             height: auto;
         }
+        /* NASCONDI di default */
+        #scroll-indicator {
+            display: none;
+        }
+        /* MOSTRA solo su mobile */
+        @media (max-width: 768px) {
+            #scroll-indicator {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -55,6 +65,11 @@
 <!-- OVERLAY -->
 <div id="overlay" onclick="toggleMenu()"></div>
 <!-- Fine hamburger -->
+
+<div id="scroll-indicator">
+Scroll to see more ↓
+</div>
+<script src="scroll.js"></script>
 
 <!-- Libreria Three.js -->
 <script type="importmap">

@@ -14,6 +14,16 @@
             max-width: 90%;
             border-radius: 5%;
         }
+        /* NASCONDI di default */
+        #scroll-indicator {
+            display: none;
+        }
+        /* MOSTRA solo su mobile */
+        @media (max-width: 768px) {
+            #scroll-indicator {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -55,6 +65,10 @@
 <div id="overlay" onclick="toggleMenu()"></div>
 <!-- Fine hamburger -->
 
+<div id="scroll-indicator">
+Scroll to see more ↓
+</div>
+<script src="scroll.js"></script>
 
 <div id="contenuto_sito">
     <div class="meta" style="text-align: justify;">

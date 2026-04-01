@@ -23,6 +23,16 @@
         img.hover-effect:hover{
             transform: scale(1.05);
         }
+        /* NASCONDI di default */
+        #scroll-indicator {
+            display: none;
+        }
+        /* MOSTRA solo su mobile */
+        @media (max-width: 768px) {
+            #scroll-indicator {
+                display: block;
+            }
+        }
     </style>
 </head>
 
@@ -62,6 +72,11 @@
 <!-- OVERLAY -->
 <div id="overlay" onclick="toggleMenu()"></div>
 <!-- Fine hamburger -->
+
+<div id="scroll-indicator">
+Scroll to see more ↓
+</div>
+<script src="scroll.js"></script>
 
 <div id="contenuto_sito">
     <br>
