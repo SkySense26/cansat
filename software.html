@@ -24,6 +24,14 @@
                 display: block;
             }
         }
+        @media (max-width: 1250px) {
+            .meta > div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        }
     </style>
 </head>
 
@@ -102,7 +110,7 @@ Scroll to see more ↓
 
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                    <img src="IMG/software.png">
+                    <img src="IMG/software.png" style="max-height: 500px;">
                 </div>
             </div>
                 <script> showSlides(); </script>
