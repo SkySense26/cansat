@@ -277,9 +277,6 @@ blockquote{
 @media (max-width: 1250px) {
   .meta > div {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 .meta > div > h2{
