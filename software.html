@@ -87,42 +87,66 @@ Scroll to see more ↓
 <script src="scroll.js"></script>
 
 <div id="contenuto_sito">
-    <div class="meta" style="text-align: justify;">
-        <div style="padding: 20px;">
-            <h2>Software</h2>
-            <p>The SkySense software is responsible for managing sensor data acquisition, communication with the 
-                ground station and data processing.<br>
-                The system is programmed in Python and runs on a Raspberry Pi Pico, which collects environmental 
-                data such as altitude, pressure, temperature, acceleration and air quality. Data packets are transmitted 
-                to the ground station at a frequency of at least 1 Hz, while also being stored locally on an SD card to 
-                prevent data loss in case of transmission issues.<br>
-                A key innovative feature of our software is the data-to-music conversion system, which transforms scientific 
-                measurements into musical parameters such as pitch, rhythm and tempo. The generated sound is further refined 
-                using AI-based music generation tools, creating a unique combination of scientific data and artistic expression.
-            </p>
-            <div class="tre">
-                <div class="logo">
-                    <img src="IMG/python.svg.png" alt="Python" style="height: 75px;">
-                </div>
-                <div class="logo">
-                    <img src="IMG/lora.png" alt="LoRa" style="height: 75px;">
-                </div>
-                <div class="logo">
-                    <img src="IMG/raspberry.png" alt="Raspberry" style="height: 75px;">
-                </div>
-            </div>
+    <div class="centrato">
+    <h2>Risk Management</h2>
+        <blockquote>
+            Engineering is not only about building systems — it is also about anticipating problems and 
+            designing reliable solutions.
+        </blockquote>
+        <p>
+            During the development of SkySense, several potential risks were identified and carefully 
+            considered in order to ensure the reliability and success of the mission.
+        </p>
+        <div class="mission-tags">
+            <span class="tag">&#9881;&#65039; Technical Challenges</span>
+            <span class="tag">&#9203; Time Management</span>
+            <span class="tag">&#128268; System Integration</span>
+            <span class="tag">&#128218; Learning New Technologies</span>
         </div>
-        <div>
-            <br>
-            <script src="slideshow_2.js"></script>
-
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <center><img src="IMG/software.png" style="max-height: 500px;"></center>
-                </div>
-            </div>
-                <script> showSlides(); </script>
+        <p>
+            One of the main risks involved technical difficulties related to the implementation of new 
+            components and technologies. Since some systems required learning unfamiliar architectures and communication 
+            protocols, unexpected challenges could potentially slow development. To reduce this risk, the team performed 
+            preliminary research, tested components individually and consulted official documentation before integration.
+        <br>
+            Time management also represented an important challenge. Certain tasks required more time than 
+            initially expected, potentially affecting later stages of development. To mitigate this risk, the team organized 
+            the workflow into structured phases and regularly monitored progress to adapt schedules when necessary.
+        <br>
+            Another possible issue involved system integration. Even when individual components worked correctly on 
+            their own, compatibility problems could appear once all systems were connected together. For this reason, 
+            incremental testing was carried out throughout the development process, allowing issues to be identified and 
+            solved early.
+        <br>
+            Finally, some team members initially had limited experience with specific technologies used in the project. This 
+            challenge was addressed through collaborative learning, tutorials, experimentation and continuous knowledge 
+            sharing within the team.
+        </p>
+        <br>
+        <h2>Launch Risks</h2>
+        <div class="mission-tags">
+            <span class="tag">&#128030; Software Bugs</span>
+            <span class="tag">&#128225; Communication Failures</span>
+            <span class="tag">&#9889; Performance Limitations</span>
+            <span class="tag">&#128640; Deployment Issues</span>
         </div>
+        <p>
+            During the launch phase, additional risks were considered regarding the operation of the CanSat under real 
+            mission conditions.
+        <br>
+            One possible risk involved undetected software bugs or unexpected system errors that could appear during flight.
+            To minimize this possibility, the team performed repeated testing sessions and verified the stability of the 
+            most critical software functions before deployment.
+        <br>
+            Another concern was related to communication reliability and system performance. The CanSat must continuously 
+            transmit environmental data to the ground station while also storing data locally on the SD card. 
+            To ensure redundancy and reliability, local storage was implemented as a backup solution in case of temporary
+            transmission issues.
+        <br>
+            Finally, technical problems during deployment or operation could occur, including unexpected hardware behavior 
+            or configuration issues. To reduce the impact of these problems, backup configurations and recovery procedures
+            were prepared in advance, allowing the system to be quickly restored if necessary.
+        </p>
     </div>
     <br><br>
 
